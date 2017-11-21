@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<button id="butt">sssss</button>
+		<script type="text/javascript">
+			var butt = document.getElementById("butt");
+
+			function fun1(success) {
+				console.log(11111);
+				success();
+			}
+			butt.onclick = function() {
+				fun1(function() {
+					console.log(22222);
+				});
+			}
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<button onclick="fun1()">sssssssss</button>
+		<script src="../js/ajax.js"></script>
+		<script type="text/javascript">
+			function fun1() {
+				ajax_tool("GET", "ajaxdemo.php", "name=sss",function(data){
+					console.log(data)
+				});
+
+			}
+		</script>
+	</body>
+
+</html>
