@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<button onclick="fun1()">sssssssss</button>
+		<script src="ajaxFull.js"></script>
+		<script type="text/javascript">
+			function fun1() {
+				var option = {
+					method: "GET",
+					url: "ajaxFull.php",
+					data: "name=fqiang",
+					success : function(data){
+						console.log(data);
+					}
+				}
+				ajax_tool(option);
+			}
+		</script>
+	</body>
+</html>
